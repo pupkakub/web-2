@@ -1,0 +1,65 @@
+.plot-content {
+    height: calc(100vh - 80px);
+    width: 100vw;
+    background: black;
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+.rows {
+    display: grid;
+    grid-template-rows: 1fr 1fr; 
+    box-sizing: border-box;
+    height: 100%;
+    overflow: hidden;
+}
+
+.firstrow {
+    display: flex; 
+    align-items: center;
+    border-bottom: 5px solid black;
+    height: calc((calc(100vh - 80px))/2);
+}
+.secondrow
+{
+    display: flex; 
+    align-items: center;
+    height: calc((calc(100vh - 80px))/2);
+}
+
+#first, #second  {
+    padding: 5px;
+    font-size: 20px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    flex: 1; 
+    object-fit: contain;
+    overflow: hidden;
+    max-width: 100%;
+    max-height: 100%;
+    word-wrap: break-word; 
+    flex-shrink: 1; 
+    background: linear-gradient(rgb(155, 155, 255), rgb(212, 255, 212));;
+}
+
+#firstphoto, #secondphoto {
+    height: 100%; 
+    overflow: hidden;
+    z-index: 1200;
+    display: flex;
+    flex-shrink: 3;
+}
+
+
+@media (max-width: 1000px) {
+    #first, #second
+    {
+        overflow: hidden;
+        font-size: small;
+        object-fit: cover;
+    }
+    #firstphoto, #secondphoto
+    {
+        box-sizing: border-box;
+        height: 50%;
+    }
+}
