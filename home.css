@@ -44,7 +44,7 @@ h2
     position: relative;
     left: 100%;
     bottom: 100%;
-    text-wrap: nowrap;
+    text-wrap: wrap;
     width: 100vw;
 }
 
