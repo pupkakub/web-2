@@ -46,6 +46,8 @@ h2
     bottom: 100%;
     text-wrap: wrap;
     width: 100vw;
+    overflow-wrap: break-word;
+    white-space: normal;
 }
 
 
