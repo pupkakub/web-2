@@ -3,7 +3,7 @@
     width: 100vw;
     background: black;
     display: grid;
-    grid-template-columns: 20% 80%;
+    grid-template-columns: 25% 75%;
 }
 .rows {
     display: grid;
@@ -51,9 +51,13 @@
 
 
 @media (max-width: 1000px) {
+    .menu
+    {
+        overflow: auto;
+    }
     #first, #second
     {
-        overflow: hidden;
+        overflow: auto;
         font-size: small;
         object-fit: cover;
     }

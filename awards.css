@@ -55,11 +55,14 @@
 @media (max-width: 1300px) {
     .nominations {
         font-size: medium;
+        overflow: auto;
+        padding-left:0;
     }
 }
 
 @media (max-width: 600px) {
     #nominations {
         font-size: small; 
+        overflow: auto;
     }
 }

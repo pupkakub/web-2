@@ -1,6 +1,6 @@
 .developers-content {
     display: grid;
-    grid-template-columns: 20% 50% 30%; 
+    grid-template-columns: 25% 45% 30%; 
     grid-row: auto 1fr auto;
 }
 .company
@@ -63,8 +63,13 @@
     object-fit: contain; 
 }
 @media (max-width: 1300px) {
+    .menu
+    {
+        overflow: auto;
+    }
     #company-text {
         font-size: medium;
+        overflow: auto;
     }
 }
 
