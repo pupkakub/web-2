@@ -84,7 +84,8 @@
     }
     #AboutTheGame
     {
-        font-size: large;
+        font-size: medium;
+        overflow: auto;
     }
     .about-content {
         grid-template-columns: 25% 75%;
